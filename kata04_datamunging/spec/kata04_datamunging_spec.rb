@@ -76,4 +76,9 @@ describe FootballStats do
     expect(stat.team_name).to eq('Expected_Winner')
   end
 
+  it 'does the kata' do
+    stat = FootballStats.read_file_and_return_smallest_spread('data/football.dat')
+    puts stat.team_name
+  end
+
 end
